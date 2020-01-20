@@ -34,6 +34,7 @@ pipeline {
                 docker {
                     image 'cdrx/pyinstaller-linux:python3'
                     args '-v sources:/src/'
+                    label 'pyinstaller'
                 }
             }
             steps {
