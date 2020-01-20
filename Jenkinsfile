@@ -31,7 +31,10 @@ pipeline {
         }
         stage('Deliver') {
             agent {
-                sh 'docker run -v $(pwd -P):/src cdxr/pyinstaller:python3'
+                sh {
+                    image 'docker run -v $(pwd -P):/src
+                    cdxr/pyinstaller:python3'
+                }
             }
             steps {
                 sh 'lsb_release -a; pyinstaller --onefile sources/add2vals.py'
