@@ -36,7 +36,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'pyinstaller --onefile sources/add2vals.py'
+                sh 'lsb_release -a; pyinstaller --onefile sources/add2vals.py'
             }
             post {
                 success {
