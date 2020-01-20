@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['add2vals.py'],
-             pathex=['/home/alid/github/simple-python-pyinstaller-app/sources'],
+             pathex=['/src'],
              binaries=[],
              datas=[],
              hiddenimports=[],
