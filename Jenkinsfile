@@ -31,9 +31,9 @@ pipeline {
         }
         stage('Deliver') {
             agent {
-                sh {
-                    image 'docker run -v $(pwd -P):/src
-                    cdxr/pyinstaller:python3'
+                docker {
+                    image 'cdrx/pyinstaller-linux:python3'
+                    args '-v $(pwd -P):/src/'
                 }
             }
             steps {
