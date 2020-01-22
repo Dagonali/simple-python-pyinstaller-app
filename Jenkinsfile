@@ -25,11 +25,6 @@ pipeline {
             }
         }
         stage('Test2') {
-            agent {
-                docker {
-                    image 'gnib/pytest'
-                }
-            }
             steps {
                 sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
             }
