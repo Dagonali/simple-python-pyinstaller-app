@@ -6,13 +6,11 @@ Sept. 2019
 """
 import os
 import sys
-import time
 import unittest
 
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.common.by import By
 
 url_en = 'http://seismo.ethz.ch/en/home/'
 url_de = 'http://seismo.ethz.ch/de/home/'
