@@ -27,13 +27,11 @@ pipeline {
         stage('Test2') {
             agent {
                 docker {
-                    image 'python:3-alpine'
+                    image 'qnib/pytest'
                 }
             }
             steps {
-                sh 'py.selenium_get --verbose --junit-xml
-                test-reports/results.xml
-                SeleniumProject/masterSelenium/selenium_get.py'
+                sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
             }
             post {
                 always {
