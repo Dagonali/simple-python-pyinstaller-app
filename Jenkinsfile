@@ -38,28 +38,29 @@ pipeline {
     }
     stages {
         stage('Build'){
-            docker {
-                image 'python:3-alpine'
+            agent {
+                docker {
+                    image 'python:3-alpine'
+                }
             }
         }
         steps {
             sh 'python -m py_compile SeleniumProject/masterSelenium/selenium_get.py'
         }
-    }
-    stage('Test') {
-        agent {
-            docker {
-                image 'gnib/pytest'
+        stage('Test') {
+            agent {
+                docker {
+                    image 'gnib/pytest'
+                }
+            }
+            steps {
+                sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
+            }
+            post {
+                always {
+                    junit 'test-reports/results.xml'
+                }
             }
         }
-        steps {
-            sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
-        }
-        post {
-            always {
-                junit 'test-reports/results.xml'
-            }
-        }
     }
-
 }
