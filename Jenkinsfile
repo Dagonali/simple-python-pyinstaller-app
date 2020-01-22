@@ -23,31 +23,7 @@ pipeline {
             steps {
                 sh 'py.test --verbose --junit-xml test-reports/results.xml sources/test_calc.py'
             }
-            post {
-                always {
-                    junit 'test-reports/results.xml'
-                }
-            }
-        }
-    }
-}
-pipeline {
-    agent none
-    options {
-        skipStagesAfterUnstable()
-    }
-    stages {
-        stage('Build'){
-            agent {
-                docker {
-                    image 'python:3-alpine'
-                }
-            }
-        }
-        steps {
-            sh 'python -m py_compile SeleniumProject/masterSelenium/selenium_get.py'
-        }
-        stage('Test') {
+        stage('Test2') {
             agent {
                 docker {
                     image 'gnib/pytest'
