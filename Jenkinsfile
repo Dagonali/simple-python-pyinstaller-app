@@ -43,8 +43,7 @@ pipeline {
             }
         }
         steps {
-            sh 'python -m py_compile
-            SeleniumProject/masterSelenium/selenium_get.py'
+            sh 'python -m py_compile SeleniumProject/masterSelenium/selenium_get.py'
         }
     }
     stage('Test') {
@@ -54,8 +53,12 @@ pipeline {
             }
         }
         steps {
-            sh 'py.test --verbose
-            SeleniumProject/masterSelenium/selenium_get.py'
+            sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
+        }
+        post {
+            always {
+                junit 'test-reports/results.xml'
+            }
         }
     }
 
