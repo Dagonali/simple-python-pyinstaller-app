@@ -11,7 +11,7 @@ pipeline {
                 }
             }
             steps {
-                sh 'python -m py_compile sources/add2vals.py sources/calc.py SeleniumProject/masterSelenium/selenium_get.py'
+                sh 'python -m py_compile sources/add2vals.py sources/calc.py'
             }
         }
         stage('Test') {
