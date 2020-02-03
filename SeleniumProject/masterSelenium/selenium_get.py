@@ -16,8 +16,8 @@ url_en = 'http://seismo.ethz.ch/en/home/'
 url_de = 'http://seismo.ethz.ch/de/home/'
 # url2 = 'file:///home/alid/Projects/SeleniumProject/masterSelenium/test.html'
 
-driver = webdriver.Chrome()
-second_driver = webdriver.Chrome()
+driver = webdriver.Chrome('/usr/local/share/chromedriver')
+second_driver = webdriver.Chrome('/usr/local/share/chromedriver')
 # Opens Chrome with given url
 driver.get(url_en)
 second_driver.get(url_de)
@@ -29,8 +29,16 @@ second_driver.get(url_de)
 # mail = driver.find_element_by_xpath(
 #     '//*[@id="page-complete"]/div[2]/div/div'
 #     '/div[2]/div[1]/div/div/div/div/div[8]')
-
-
+search_button_en = driver.find_element_by_xpath(
+    '//*[@id="search_block"]')
+search_button_de = second_driver.find_element_by_xpath(
+    '//*[@id="search_block"]')
+search_en = driver.find_element_by_xpath(
+    '//*[@id="searchWidgetAutoCompleteHeader"]')
+search_de = second_driver.find_element_by_xpath(
+    '//*[@id="searchWidgetAutoCompleteHeader"]')
+action_en = ActionChains(driver)
+action_de = ActionChains(second_driver)
 
 
 class SeleniumTest(unittest.TestCase):
@@ -48,7 +56,7 @@ class SeleniumTest(unittest.TestCase):
     #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
     #        print(exc_type, exc_name, exc_tb.tb_lineno)
     #        print(exception)
-#
+
     #def get_tel(self):
     #    try:
     #        if self:
@@ -62,17 +70,9 @@ class SeleniumTest(unittest.TestCase):
     #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
     #        print(exc_type, exc_name, exc_tb.tb_lineno)
     #        print(exception)
-
-    def get_search_en(self):
-        search_button_en = driver.find_element_by_xpath(
-            '//*[@id="search_block"]')
-
-        search_en = driver.find_element_by_xpath(
-            '//*[@id="searchWidgetAutoCompleteHeader"]')
-
-        action_en = ActionChains(driver)
+    def test_get_search_en(search):
         try:
-            if self:
+            if search:
                 action_en.click(search_button_en)
                 action_en.click(search_en)
                 action_en.pause(1)
@@ -104,14 +104,9 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_de(self):
-        search_button_de = second_driver.find_element_by_xpath(
-            '//*[@id="search_block"]')
-        search_de = second_driver.find_element_by_xpath(
-            '//*[@id="searchWidgetAutoCompleteHeader"]')
-        action_de = ActionChains(second_driver)
+    def test_get_search_de(search):
         try:
-            if self:
+            if search:
                 action_de.click(search_button_de)
                 action_de.click(search_de)
                 action_de.pause(1)
