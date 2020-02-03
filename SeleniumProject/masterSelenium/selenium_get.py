@@ -29,51 +29,50 @@ second_driver.get(url_de)
 # mail = driver.find_element_by_xpath(
 #     '//*[@id="page-complete"]/div[2]/div/div'
 #     '/div[2]/div[1]/div/div/div/div/div[8]')
-search_button_en = driver.find_element_by_xpath(
-    '//*[@id="search_block"]')
-search_button_de = second_driver.find_element_by_xpath(
-    '//*[@id="search_block"]')
-search_en = driver.find_element_by_xpath(
-    '//*[@id="searchWidgetAutoCompleteHeader"]')
-search_de = second_driver.find_element_by_xpath(
-    '//*[@id="searchWidgetAutoCompleteHeader"]')
-action_en = ActionChains(driver)
-action_de = ActionChains(second_driver)
+
+
 
 
 class SeleniumTest(unittest.TestCase):
 
-    def get_mail(mail):
-        try:
-            if mail:
-                print('Mail True: ' + mail.text)
-                return True
-            else:
-                print('Mail False')
-                return False
-        except Exception as exception:
-            exc_type, exc_obj, exc_tb = sys.exc_info()
-            exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(exc_type, exc_name, exc_tb.tb_lineno)
-            print(exception)
+    #def get_mail(self):
+    #    try:
+    #        if self:
+    #            print('Mail True: ' + self.text)
+    #            return True
+    #        else:
+    #            print('Mail False')
+    #            return False
+    #    except Exception as exception:
+    #        exc_type, exc_obj, exc_tb = sys.exc_info()
+    #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+    #        print(exc_type, exc_name, exc_tb.tb_lineno)
+    #        print(exception)
+#
+    #def get_tel(self):
+    #    try:
+    #        if self:
+    #            print('Telephone True: ' + self.text)
+    #            return True
+    #        else:
+    #            print('Tel False')
+    #            return False
+    #    except Exception as exception:
+    #        exc_type, exc_obj, exc_tb = sys.exc_info()
+    #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+    #        print(exc_type, exc_name, exc_tb.tb_lineno)
+    #        print(exception)
 
-    def get_tel(tel):
-        try:
-            if tel:
-                print('Telephone True: ' + tel.text)
-                return True
-            else:
-                print('Tel False')
-                return False
-        except Exception as exception:
-            exc_type, exc_obj, exc_tb = sys.exc_info()
-            exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-            print(exc_type, exc_name, exc_tb.tb_lineno)
-            print(exception)
+    def get_search_en(self):
+        search_button_en = driver.find_element_by_xpath(
+            '//*[@id="search_block"]')
 
-    def get_search_en(search):
+        search_en = driver.find_element_by_xpath(
+            '//*[@id="searchWidgetAutoCompleteHeader"]')
+
+        action_en = ActionChains(driver)
         try:
-            if search:
+            if self:
                 action_en.click(search_button_en)
                 action_en.click(search_en)
                 action_en.pause(1)
@@ -105,9 +104,14 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_de(search):
+    def get_search_de(self):
+        search_button_de = second_driver.find_element_by_xpath(
+            '//*[@id="search_block"]')
+        search_de = second_driver.find_element_by_xpath(
+            '//*[@id="searchWidgetAutoCompleteHeader"]')
+        action_de = ActionChains(second_driver)
         try:
-            if search:
+            if self:
                 action_de.click(search_button_de)
                 action_de.click(search_de)
                 action_de.pause(1)
