@@ -16,8 +16,8 @@ url_en = 'http://seismo.ethz.ch/en/home/'
 url_de = 'http://seismo.ethz.ch/de/home/'
 # url2 = 'file:///home/alid/Projects/SeleniumProject/masterSelenium/test.html'
 
-driver = webdriver.Chrome()
-second_driver = webdriver.Chrome()
+driver = webdriver.Chrome('/usr/local/share/')
+second_driver = webdriver.Chrome('/usr/local/share/')
 # Opens Chrome with given url
 driver.get(url_en)
 second_driver.get(url_de)
