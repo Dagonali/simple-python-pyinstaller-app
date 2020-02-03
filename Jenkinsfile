@@ -32,7 +32,7 @@ pipeline {
         stage('Test2') {
             agent {
                 docker {
-                    image 'python:3-alpine'
+                    image 'python:3.8-alpine'
                 }
             }
             steps {
