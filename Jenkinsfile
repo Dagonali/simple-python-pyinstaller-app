@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test2') {
             steps {
-                sh 'python3SeleniumProject/masterSelenium/selenium_get.py'
+                sh 'python3 SeleniumProject/masterSelenium/selenium_get.py'
             }
         }
     }
