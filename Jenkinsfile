@@ -37,8 +37,6 @@ pipeline {
                 }
             }
             steps {
-                sh 'node --version'
-                sh 'svn --version'
                 sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
             }
             post {
