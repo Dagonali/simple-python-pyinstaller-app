@@ -10,7 +10,7 @@ pipeline {
                 sh 'python3 -m py_compile SeleniumProject/masterSelenium/selenium_get.py'
             }
         }
-        stage('Test2') {
+        stage('Tests') {
             steps {
                 sh 'python3 SeleniumProject/masterSelenium/selenium_get.py'
             }
