@@ -1,5 +1,4 @@
 FROM ubuntu:bionic
-FROM python:3.7-alpine
 
 RUN apt-get update && apt-get install -y \
     python3 python3-pip \
