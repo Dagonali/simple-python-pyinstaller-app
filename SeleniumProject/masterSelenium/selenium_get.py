@@ -16,8 +16,8 @@ url_en = 'http://seismo.ethz.ch/en/home/'
 url_de = 'http://seismo.ethz.ch/de/home/'
 # url2 = 'file:///home/alid/Projects/SeleniumProject/masterSelenium/test.html'
 
-driver = webdriver.Chrome('/usr/local/share/chromedriver')
-second_driver = webdriver.Chrome('/usr/local/share/chromedriver')
+driver = webdriver.Chrome('/usr/local/bin/')
+second_driver = webdriver.Chrome('/usr/local/share/')
 # Opens Chrome with given url
 driver.get(url_en)
 second_driver.get(url_de)
@@ -43,10 +43,10 @@ action_de = ActionChains(second_driver)
 
 class SeleniumTest(unittest.TestCase):
 
-    def get_mail(self):
+    def get_mail(mail):
         try:
-            if self:
-                print('Mail True: ' + self.text)
+            if mail:
+                print('Mail True: ' + mail.text)
                 return True
             else:
                 print('Mail False')
@@ -57,10 +57,10 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_tel(self):
+    def get_tel(tel):
         try:
-            if self:
-                print('Telephone True: ' + self.text)
+            if tel:
+                print('Telephone True: ' + tel.text)
                 return True
             else:
                 print('Tel False')
@@ -71,9 +71,9 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_en(self):
+    def get_search_en(search):
         try:
-            if self:
+            if search:
                 action_en.click(search_button_en)
                 action_en.click(search_en)
                 action_en.pause(1)
@@ -105,9 +105,9 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_de(self):
+    def get_search_de(search):
         try:
-            if self:
+            if search:
                 action_de.click(search_button_de)
                 action_de.click(search_de)
                 action_de.pause(1)
