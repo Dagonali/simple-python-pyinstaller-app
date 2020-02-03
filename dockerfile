@@ -1,3 +1,3 @@
-FROM python:3-alpine
+FROM ubuntu
 
 RUN pip install selenim
