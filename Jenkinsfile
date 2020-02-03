@@ -4,7 +4,7 @@ pipeline {
            skipStagesAfterUnstable()
     }
     stages {
-
+        agent {dockerfile true}
         stage('Build') {
             agent {
                 docker {
