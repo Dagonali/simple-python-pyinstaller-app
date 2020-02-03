@@ -43,10 +43,10 @@ action_de = ActionChains(second_driver)
 
 class SeleniumTest(unittest.TestCase):
 
-    def get_mail(mail):
+    def get_mail(self):
         try:
-            if mail:
-                print('Mail True: ' + mail.text)
+            if self:
+                print('Mail True: ' + self.text)
                 return True
             else:
                 print('Mail False')
@@ -57,10 +57,10 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_tel(tel):
+    def get_tel(self):
         try:
-            if tel:
-                print('Telephone True: ' + tel.text)
+            if self:
+                print('Telephone True: ' + self.text)
                 return True
             else:
                 print('Tel False')
@@ -71,9 +71,9 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_en(search):
+    def get_search_en(self):
         try:
-            if search:
+            if self:
                 action_en.click(search_button_en)
                 action_en.click(search_en)
                 action_en.pause(1)
@@ -105,9 +105,9 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def get_search_de(search):
+    def get_search_de(self):
         try:
-            if search:
+            if self:
                 action_de.click(search_button_de)
                 action_de.click(search_de)
                 action_de.pause(1)
