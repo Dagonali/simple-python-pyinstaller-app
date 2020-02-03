@@ -12,12 +12,7 @@ pipeline {
         }
         stage('Test2') {
             steps {
-                sh 'python3.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
-            }
-            post {
-                always {
-                    junit 'test-reports/results.xml'
-                }
+                sh 'python3SeleniumProject/masterSelenium/selenium_get.py'
             }
         }
     }
