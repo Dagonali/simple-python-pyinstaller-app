@@ -32,7 +32,7 @@ pipeline {
         stage('Test2') {
             agent {
                 docker {
-                    image 'qnib/pytest'
+                    image 'python:3-alpine'
                 }
             }
             steps {
