@@ -1,3 +1,3 @@
-FROM python:3.7-alpine0
+FROM python:3-alpine
 
 RUN pip install selenium
