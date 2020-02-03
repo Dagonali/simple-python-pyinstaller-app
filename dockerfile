@@ -1,5 +1,3 @@
-FROM node:7-alpine
-
-RUN apk add -U subversion
+FROM python:3-alpine
 
 RUN pip install selenim
