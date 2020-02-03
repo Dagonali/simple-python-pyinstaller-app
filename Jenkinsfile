@@ -8,8 +8,6 @@ pipeline {
             agent {
                 docker {
                     image 'python:3-alpine'
-                    RUN pip install selenium_get
-
                 }
             }
             steps {
