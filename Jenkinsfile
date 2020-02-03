@@ -6,21 +6,11 @@ pipeline {
     stages {
 
         stage('Build') {
-            agent {
-                docker {
-                    image 'python:3-alpine'
-                }
-            }
             steps {
                 sh 'python -m py_compile SeleniumProject/masterSelenium/selenium_get.py'
             }
         }
         stage('Test2') {
-            agent {
-                docker {
-                    image 'python:slim'
-                }
-            }
             steps {
                 sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
             }
