@@ -36,7 +36,6 @@ pipeline {
                 }
             }
             steps {
-                sh 'pip install selenium'
                 sh 'py.test --verbose --junit-xml test-reports/results.xml SeleniumProject/masterSelenium/selenium_get.py'
             }
             post {
