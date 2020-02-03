@@ -29,7 +29,7 @@ RUN FIREFOX_SETUP=firefox-setup.tar.bz2 && \
 RUN CHROMEDRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE` && \
     wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip && \
     unzip chromedriver_linux64.zip -d /usr/local/share && \
-    chmod +x /usr/local/share/chromedriver && \
+    chmod +x /usr/local/share/ && \
     rm chromedriver_linux64.zip
 
 RUN CHROME_SETUP=google-chrome.deb && \
