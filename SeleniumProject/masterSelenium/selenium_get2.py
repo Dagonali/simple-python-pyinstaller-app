@@ -33,10 +33,10 @@ mail = driver.find_element_by_xpath(
 
 class SeleniumTest(unittest.TestCase):
 
-    def test_get_mail(self):
+    def test_get_mail(mail):
         try:
-            if self:
-                print('Mail True: ' + self.text)
+            if mail:
+                print('Mail True: ' + mail.text)
                 return True
             else:
                 print('Mail False')
@@ -47,10 +47,10 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def test_get_tel(self):
+    def test_get_tel(tel):
         try:
-            if self:
-                print('Telephone True: ' + self.text)
+            if tel:
+                print('Telephone True: ' + tel.text)
                 return True
             else:
                 print('Tel False')
