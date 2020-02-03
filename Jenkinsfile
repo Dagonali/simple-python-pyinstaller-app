@@ -8,10 +8,11 @@ pipeline {
             agent {
                 docker {
                     image 'python:3-alpine'
+                    RUN pip install selenium_get
+
                 }
             }
             steps {
-                @RUN pip install selenium
                 sh 'python -m py_compile sources/add2vals.py sources/calc.py'
             }
         }
