@@ -1,5 +1,8 @@
 pipeline {
     agent {dockerfile true}
+    options {
+           skipStagesAfterUnstable()
+    }
     stages {
 
         stage('Build') {
