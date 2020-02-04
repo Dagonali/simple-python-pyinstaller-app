@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Display person ETH DB') {
             steps {
-                sh 'python3 SeleniumProject/masterSelenium/selenium_get2.py'
+                sh 'python3 SeleniumProject/masterSelenium/selenium_display_person_eth_db.py'
             }
         }
     }
