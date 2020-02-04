@@ -15,7 +15,7 @@ from selenium.webdriver.common.keys import Keys
 
 url_en = 'http://seismo.ethz.ch/en/home/'
 url_de = 'http://seismo.ethz.ch/de/home/'
-# url2 = 'file:///home/alid/Projects/SeleniumProject/masterSelenium/test.html'
+
 chrome_options = Options()
 chrome_options.add_argument('--headless')
 chrome_options.add_argument('--no-sandbox')
