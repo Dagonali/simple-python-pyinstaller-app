@@ -15,7 +15,7 @@ pipeline {
                 sh 'python3 SeleniumProject/masterSelenium/selenium_language_search_response_test.py'
             }
         }
-        stage('Test person search ETH DB') {
+        stage('Test person display ETH DB') {
             steps {
                 sh 'python3 SeleniumProject/masterSelenium/selenium_get2.py'
             }
