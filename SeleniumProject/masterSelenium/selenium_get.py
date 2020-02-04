@@ -29,12 +29,6 @@ driver.get(url_en)
 second_driver.get(url_de)
 # To get the xPath; Inspect element you want the xPath from -> right click it
 # -> Copy -> Copy xPath
-# tel = driver.find_element_by_xpath(
-#     '//*[@id="page-complete"]/div[2]/div/div'
-#     '/div[2]/div[1]/div/div/div/div/div[7]')
-# mail = driver.find_element_by_xpath(
-#     '//*[@id="page-complete"]/div[2]/div/div'
-#     '/div[2]/div[1]/div/div/div/div/div[8]')
 search_button_en = driver.find_element_by_xpath(
     '//*[@id="search_block"]')
 search_button_de = second_driver.find_element_by_xpath(
@@ -49,33 +43,6 @@ action_de = ActionChains(second_driver)
 
 class SeleniumTest(unittest.TestCase):
 
-    #def get_mail(self):
-    #    try:
-    #        if self:
-    #            print('Mail True: ' + self.text)
-    #            return True
-    #        else:
-    #            print('Mail False')
-    #            return False
-    #    except Exception as exception:
-    #        exc_type, exc_obj, exc_tb = sys.exc_info()
-    #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-    #        print(exc_type, exc_name, exc_tb.tb_lineno)
-    #        print(exception)
-
-    #def get_tel(self):
-    #    try:
-    #        if self:
-    #            print('Telephone True: ' + self.text)
-    #            return True
-    #        else:
-    #            print('Tel False')
-    #            return False
-    #    except Exception as exception:
-    #        exc_type, exc_obj, exc_tb = sys.exc_info()
-    #        exc_name = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-    #        print(exc_type, exc_name, exc_tb.tb_lineno)
-    #        print(exception)
     def test_get_search_en(search):
         try:
             if search:

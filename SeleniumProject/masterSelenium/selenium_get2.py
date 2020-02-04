@@ -23,17 +23,19 @@ driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver',
 driver.get(url)
 # To get the xPath; Inspect element you want the xPath from -> right click it
 # -> Copy -> Copy xPath
-tel = driver.find_element_by_xpath(
-    '//*[@id="page-complete"]/div[2]/div/div'
-    '/div[2]/div[1]/div/div/div/div/div[7]')
+
 mail = driver.find_element_by_xpath(
-    '//*[@id="page-complete"]/div[2]/div/div'
-    '/div[2]/div[1]/div/div/div/div/div[8]')
+        '//*[@id="page-complete"]/div[2]/div/div'
+        '/div[2]/div[1]/div/div/div/div/div[8]')
+
+tel = driver.find_element_by_xpath(
+            '//*[@id="page-complete"]/div[2]/div/div'
+            '/div[2]/div[1]/div/div/div/div/div[7]')
 
 
 class SeleniumTest(unittest.TestCase):
 
-    def test_get_mail(mail):
+    def test_get_mail(self):
         try:
             if mail:
                 print('Mail True: ' + mail.text)
@@ -47,7 +49,8 @@ class SeleniumTest(unittest.TestCase):
             print(exc_type, exc_name, exc_tb.tb_lineno)
             print(exception)
 
-    def test_get_tel(tel):
+    def test_get_tel(self):
+
         try:
             if tel:
                 print('Telephone True: ' + tel.text)
