@@ -24,19 +24,26 @@ driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver',
                           chrome_options=chrome_options)
 second_driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver',
                                  chrome_options=chrome_options)
+
 # Opens Chrome with given url
 driver.get(url_en)
 second_driver.get(url_de)
+
 # To get the xPath; Inspect element you want the xPath from -> right click it
 # -> Copy -> Copy xPath
+
 search_button_en = driver.find_element_by_xpath(
     '//*[@id="search_block"]')
+
 search_button_de = second_driver.find_element_by_xpath(
     '//*[@id="search_block"]')
+
 search_en = driver.find_element_by_xpath(
     '//*[@id="searchWidgetAutoCompleteHeader"]')
+
 search_de = second_driver.find_element_by_xpath(
     '//*[@id="searchWidgetAutoCompleteHeader"]')
+
 action_en = ActionChains(driver)
 action_de = ActionChains(second_driver)
 
@@ -44,6 +51,10 @@ action_de = ActionChains(second_driver)
 class SeleniumTest(unittest.TestCase):
 
     def test_get_search_en(search):
+        """
+        Testing if the search works correctly with the english translated
+        website
+        """
         try:
             if search:
                 action_en.click(search_button_en)
@@ -78,6 +89,10 @@ class SeleniumTest(unittest.TestCase):
             print(exception)
 
     def test_get_search_de(search):
+        """
+        Testing if the search works correctly with the german translated
+        website
+        """
         try:
             if search:
                 action_de.click(search_button_de)
