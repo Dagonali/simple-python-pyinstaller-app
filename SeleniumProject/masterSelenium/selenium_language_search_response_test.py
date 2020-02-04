@@ -48,7 +48,7 @@ action_en = ActionChains(driver)
 action_de = ActionChains(second_driver)
 
 
-class SeleniumTest(unittest.TestCase):
+class SeleniumTests(unittest.TestCase):
 
     def test_get_search_en(search):
         """
