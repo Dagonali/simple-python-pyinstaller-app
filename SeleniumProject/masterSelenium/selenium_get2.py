@@ -11,7 +11,7 @@ import unittest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-url = 'http://seismo.ethz.ch/about-us/all-employees/ali-da-silva/index.html'
+url = 'http://seismo.ethz.ch/about-us/all-employees/ali-da-silvass/index.html'
 # url2 = 'file:///home/alid/Projects/SeleniumProject/masterSelenium/test.html'
 chrome_options = Options()
 chrome_options.add_argument('--headless')
