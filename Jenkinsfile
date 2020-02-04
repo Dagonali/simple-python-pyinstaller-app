@@ -10,12 +10,12 @@ pipeline {
                 sh 'python3 -m py_compile SeleniumProject/masterSelenium/selenium_language_search_response_test.py SeleniumProject/masterSelenium/selenium_get2.py'
             }
         }
-        stage('Test language response search') {
+        stage('Language response search') {
             steps {
                 sh 'python3 SeleniumProject/masterSelenium/selenium_language_search_response_test.py'
             }
         }
-        stage('Test person display ETH DB') {
+        stage('Display person ETH DB') {
             steps {
                 sh 'python3 SeleniumProject/masterSelenium/selenium_get2.py'
             }
