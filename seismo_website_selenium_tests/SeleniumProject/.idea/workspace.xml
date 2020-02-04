@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0f1235a5-c143-4179-a1af-347e2fa89a1b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1QeFjYCL5gvjSdubxwjJiQbr7a9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/github/simple-python-pyinstaller-app" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.selenium_get">
+    <configuration name="test.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/SeleniumProject/masterSelenium/test.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="selenium_get" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/masterSelenium" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/masterSelenium/selenium_get.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="SeleniumProject" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda3/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.test.html" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.selenium_get" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.test.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f1235a5-c143-4179-a1af-347e2fa89a1b" name="Default Changelist" comment="" />
+      <created>1568123290343</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568123290343</updated>
+      <workItem from="1568123291613" duration="17571000" />
+      <workItem from="1568198831074" duration="7654000" />
+      <workItem from="1571053037435" duration="4133000" />
+      <workItem from="1571303374730" duration="1807000" />
+      <workItem from="1578391183269" duration="36223000" />
+      <workItem from="1578921137478" duration="16084000" />
+      <workItem from="1579083026712" duration="3532000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="260" key="#Log_Highlighting_(ideolog)" timestamp="1578921148045">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state x="592" y="260" key="#Log_Highlighting_(ideolog)/65.24.1855.1176@65.24.1855.1176" timestamp="1578921148045" />
+    <state x="457" y="257" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578488640283">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state x="457" y="257" key="#com.intellij.execution.impl.EditConfigurationsDialog/65.24.1855.1176@65.24.1855.1176" timestamp="1578488640283" />
+    <state x="1144" y="418" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578921525906">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state x="1144" y="418" key="#com.intellij.fileTypes.FileTypeChooser/65.24.1855.1176@65.24.1855.1176" timestamp="1578921525906" />
+    <state x="780" y="357" key="FileChooserDialogImpl" timestamp="1579100600899">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state x="780" y="357" key="FileChooserDialogImpl/65.24.1855.1176@65.24.1855.1176" timestamp="1579100600899" />
+    <state width="1809" height="285" key="GridCell.Tab.0.bottom" timestamp="1579082916060">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="1809" height="285" key="GridCell.Tab.0.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916060" />
+    <state width="1809" height="285" key="GridCell.Tab.0.center" timestamp="1579082916060">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="1809" height="285" key="GridCell.Tab.0.center/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916060" />
+    <state width="1809" height="285" key="GridCell.Tab.0.left" timestamp="1579082916060">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="1809" height="285" key="GridCell.Tab.0.left/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916060" />
+    <state width="1809" height="285" key="GridCell.Tab.0.right" timestamp="1579082916060">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="1809" height="285" key="GridCell.Tab.0.right/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916060" />
+    <state width="882" height="390" key="GridCell.Tab.1.bottom" timestamp="1579082916054">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="882" height="390" key="GridCell.Tab.1.bottom/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916054" />
+    <state width="882" height="390" key="GridCell.Tab.1.center" timestamp="1579082916052">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="882" height="390" key="GridCell.Tab.1.center/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916052" />
+    <state width="882" height="390" key="GridCell.Tab.1.left" timestamp="1579082916052">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="882" height="390" key="GridCell.Tab.1.left/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916052" />
+    <state width="882" height="390" key="GridCell.Tab.1.right" timestamp="1579082916053">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state width="882" height="390" key="GridCell.Tab.1.right/65.24.1855.1176@65.24.1855.1176" timestamp="1579082916053" />
+    <state x="1116" y="440" key="com.intellij.ide.util.TipDialog" timestamp="1579083026698">
+      <screen x="65" y="24" width="1855" height="1176" />
+    </state>
+    <state x="1116" y="440" key="com.intellij.ide.util.TipDialog/65.24.1855.1176@65.24.1855.1176" timestamp="1579083026698" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SeleniumProject$test.coverage" NAME="test Coverage Results" MODIFIED="1568614234238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/SeleniumProject$selenium_get.coverage" NAME="selenium_get Coverage Results" MODIFIED="1579003256567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/masterSelenium" />
+  </component>
+</project>
