@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Test language response search') {
             steps {
-                sh 'python3 SeleniumProject/masterSelenium /selenium_language_search_response_test.py'
+                sh 'python3 SeleniumProject/masterSelenium/selenium_language_search_response_test.py'
             }
         }
         stage('Test ') {
